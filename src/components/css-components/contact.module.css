@@ -1,0 +1,58 @@
+.container{
+    display: block;
+    text-align: center;
+    background-color: rgb(243, 247, 247);
+    width: 100%;
+    height: 30vh;
+    margin: 50px;
+}
+
+.container h1{
+    margin: 60px;
+}
+
+.container .info .email{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.container .info .emailto a{
+    font-size: 1.5em;
+    text-decoration: none;
+    background-color: aquamarine;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+    color: rgb(37, 34, 33);
+    border-radius: 10px;
+}
+
+.container .info .emailto a:hover{
+    background-color: rgb(78, 243, 188);
+    border-radius: 50px;
+    transition: all .5s ease-in;
+}
+
+.container .info p{
+    margin: 20px;
+    color: rgb(17, 17, 17);
+    font-size: 1.5em;
+}
+
+.container .info .resdownload{
+    background-color: #e74c3c;
+    padding: 15px;
+}
+
+.container .info .resdownload a{
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+.container .info .resdownload:hover{
+    background-color: #fff;
+    transition: all 1s;
+}
+.container .info .resdownload a:hover{
+    color: #e74c3c
+}
