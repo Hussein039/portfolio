@@ -5,7 +5,7 @@ const Footer = () =>{
     return(
         <div>
             <footer className={styles.list}>
-                <p>All Rights Reserved</p>
+                <p>Copyright&copy; All Rights Reserved {(new Date().getFullYear())}</p>
             </footer>
         </div>
     )

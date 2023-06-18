@@ -1,58 +1,67 @@
 .container{
     display: block;
-    text-align: center;
-    background-color: rgb(243, 247, 247);
+    background-color: #252f31;
     width: 100%;
-    height: 30vh;
-    margin: 50px;
+    height: 40vh;
+    padding-top: 70px;
+}
+
+.containerWrap{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #252f31;
+    overflow: hidden;
 }
 
 .container h1{
-    margin: 60px;
+    text-align: center;
+    color: #fff;
 }
 
 .container .info .email{
     font-size: 1.5rem;
     font-weight: bold;
-}
-.container .info .emailto a{
-    font-size: 1.5em;
-    text-decoration: none;
-    background-color: aquamarine;
-    padding: 10px;
-    margin: 10px;
-    margin-bottom: 20px;
-    color: rgb(37, 34, 33);
-    border-radius: 10px;
-}
-
-.container .info .emailto a:hover{
-    background-color: rgb(78, 243, 188);
-    border-radius: 50px;
-    transition: all .5s ease-in;
+    color: aliceblue;
 }
 
 .container .info p{
     margin: 20px;
-    color: rgb(17, 17, 17);
+    color: rgb(228, 226, 226);
     font-size: 1.5em;
+    
 }
-
-.container .info .resdownload{
-    background-color: #e74c3c;
-    padding: 15px;
+.icons{
+    display: flex;
 }
-
-.container .info .resdownload a{
-    padding: 15px;
+.icon{
+    font-size: 30px ;
+    padding: 10px;
     color: #fff;
-    text-decoration: none;
-    font-size: 15px;
 }
-.container .info .resdownload:hover{
-    background-color: #fff;
-    transition: all 1s;
+.icon:hover{
+    color: rgb(212, 203, 203);
+    transition: all .3s ease-in;
+    cursor: pointer;
+    filter: invert(50%);
 }
-.container .info .resdownload a:hover{
-    color: #e74c3c
+
+@media (max-width: 1250px){
+    .container{
+        width: 100%;
+        padding: 0;
+    }
+    .container .info .emailtxt{
+        font-size: 20px;
+    }
+    .container .info .emailto {
+        display: block;
+        margin-top: 15px;
+        font-size: .7em;
+    }
+    .container .info .resdownload{
+        margin-bottom: 20px;
+        width: 130px;
+    }
 }

@@ -27,8 +27,15 @@
     border-radius: 20px;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1250px){
     .cards{
+        
         flex-direction: column;
+        
+    }
+    .card{
+        margin: 0;
+        width:90%;
+        
     }
 }

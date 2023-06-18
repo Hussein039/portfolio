@@ -3,7 +3,7 @@ import styles from './css-components/projects.module.css'
 const Projects = () => {
     
     return (
-        <div>
+        <div id="projects">
             <div className={styles.container}>
                 <h1>Projects</h1>
                 <div className={styles.cards}>
@@ -37,6 +37,8 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
+
+            
         </div>
     )
 };
