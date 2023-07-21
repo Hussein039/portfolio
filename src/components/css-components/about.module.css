@@ -1,10 +1,11 @@
 .container{
     display: block;
-    background-color: #ffffff;
-    width: 100%;
-    
+    background-color: #65e2dc;
     padding-top: 20px;
-    margin-bottom: 140px;
+    height: 500px;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+  	-webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+  	margin-bottom: -10vw;
 }
 .container h1{
     text-align: center;
@@ -29,31 +30,15 @@
     font-weight: bold;
 }
 
-.skillsList{
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis:100%;
-    padding-top: 80px;
-}
-.skillsList li{
-    display: flex;
-    justify-content: center;
-    align-content: space-between;
-    flex-wrap: wrap;
-    padding: 10px;
-    flex-basis: 25%;
-}
 
-.skillsList img{
-    width: 120px;
-    height: 120px;
-    padding: 10px;
-}
 
 @media (max-width: 1250px){
     .skillsList{
         flex-wrap: wrap;
-    }   
+    }
+    .skillsList li{
+        flex-basis: 25%;
+    }
     .skillsList .icon{
         border: none;
     }    

@@ -1,0 +1,51 @@
+.container{
+    margin: 100px 0px 100px 0px;
+}
+.skillsec{
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+.skillsList{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 80px;
+}
+.skillsList li{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin: 5px;
+    /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
+    /* box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 4px 0px inset; */
+
+    transform: perspective(1500px) rotateY(15deg);
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    transition: transform 1s ease 0s;
+
+}
+.skillsList li:hover{
+    transform:
+      translate3d(0px, -16px, 0px)
+      rotateX(2deg)
+      rotateZ(2deg);
+    box-shadow:
+      1px 1px 0 1px #f9f9fb,
+      -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+      54px 54px 28px -10px rgba(34, 33, 81, 0.15);
+}
+
+.skillsList img{
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+}
+
+
+@media (max-width: 1250px){
+  
+}

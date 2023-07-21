@@ -5,8 +5,10 @@ import Projects from "./components/projects";
 import styles from './app.module.css';
 import Contact from "./components/contact";
 import About from "./components/about";
+
 import { BrowserRouter } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
+import Skills from "./components/skills";
 
 function App() {
   return (
@@ -15,14 +17,13 @@ function App() {
       <Header />
       
       <div className={styles.contentWrap}>
-        
         <HeroContainer />
         <Projects />
         <About />
+        <Skills />  
       </div>
       <Contact />
       <Footer />
-      
       </div>
     </BrowserRouter>
   );

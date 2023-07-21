@@ -19,7 +19,8 @@ const HeroContainer = () => {
 					<div className={styles.bgimgcolor}>
 			    		<img src={require('../images/my-img1.png')} alt="My-0Photo" ></img>
 					</div>
-			  </div>
+				</div>
+				<img src={require('../images/wave.png')} alt="My-0Photo" className={styles.wave} ></img>
 			</div>
 			
         </div>

@@ -2,20 +2,23 @@
 
   .container {
     display: flex;
-    background: linear-gradient(187deg, rgba(102,203,251,1) 36%, rgba(240,99,43,1) 100%);    min-height: 75px;
-    width: 100%;
-    justify-content: space-evenly;
+    background: linear-gradient(187deg, rgba(102,203,251,1) 36%, rgba(240,99,43,1) 100%);
+    min-height: 75px;
+    justify-content: center;
     align-items: center;
     padding: 0 20px;
     margin-bottom: 60px;
     overflow: hidden;
+    position: relative;  
   }
   
   /* Text */
   .container .textbox {
     width: 600px;
     padding: 20px;
-    text-align: left;
+    text-align: center;
+    margin-left: 12%;
+    z-index: 1;
   }
   
   .container .textbox h2 {
@@ -49,13 +52,11 @@
 
   
   .container .textbox a:hover {
-    background-color: rgb(255, 255, 255);
-    color: #E84B19;
+    background-color: #ff9e81;
     transition: all .5s ease-out;
   }
   .container .textbox a:last-child:hover {
-    background-color: #E84B19;
-    color: #fff;
+    background-color: #d1d1d1;
     transition: all .5s ease-out;
   }
   
@@ -64,6 +65,7 @@
     max-width: 1000px;
     overflow: hidden;
     margin-top: 8%;
+
   }
   
   .container .bgimg img {
@@ -72,11 +74,23 @@
 
   .bgimgcolor{
     height: auto!important ;
-    border-left: 1px rgb(41, 181, 216) dotted;
     position: relative;
     top: 10px;
-    left: 50px;
+    left: 80px;
   }
+/* Wave separator */
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  width: 100%;
+  height: 450px;
+  background-repeat: repeat-x;
+  border-bottom: rgb(255, 255, 255) 1px solid;
+  nav-index: auto;
+}
+  
   
   /* -----Responsive----- */
 @media (max-width: 1250px) {
