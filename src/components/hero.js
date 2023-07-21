@@ -5,23 +5,24 @@ const HeroContainer = () => {
 	
 
     return(
-        <div>
+        <div id="home">
 			<div class={styles.container}>
 					
 			  <div class={styles.textbox}>
 			    <h2>Hussein Hussein</h2>
-			    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque fuga nobis nihil libero eveniet aperiam ex repudiandae praesentium quaerat cum excepturi, quas fugit. Et odio repudiandae ea quibusdam vero consectetur, nemo, ullam perspiciatis laudantium obcaecati.</p>
+			    <p>Hello! I'm a front-end developer strongly focused on creating and developing beautiful and functional websites.</p>
 					<a href="#">Contact Me</a>
 					<a href='#'>Projects</a>
 			  </div>
 					
 				<div class={styles.bgimg}>
 					<div className={styles.bgimgcolor}>
-			    		<img src='../images/myphoto.png' alt=""></img>
+			    		<img src={require('../images/my-img1.png')} alt="My-0Photo" ></img>
 					</div>
-			  </div>
+				</div>
+				<img src={require('../images/wave.png')} alt="My-0Photo" className={styles.wave} ></img>
 			</div>
-
+			
         </div>
     )
 }

@@ -1,17 +1,24 @@
 .header{
+    display: flex;
     width: 100%;
     background-color: rgb(253, 253, 253);
-    text-align: right;
-    border-bottom: 1px solid black;
+    text-align: center;
+    margin-bottom: 50px;
+    position: fixed;
+    z-index: 9999;
+    border-bottom: 1px rgb(233, 233, 233) solid;
 }
 .logo{
-    float: left;
+    display: inline-block;
+    right: 100px;
     font-size: 2rem;
     font-weight: bold;
+    margin-right: 40%;
 }
 
 .listitems{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     overflow: hidden;
     margin: 0;
     font-weight: bold;
@@ -20,10 +27,9 @@
 
 
 li{
-    display: inline-flex;
-    list-style-type: none;
+    display: flex;
+    list-style-type: none; 
     padding: 15px;
-
 }
 
 li a{
@@ -31,12 +37,10 @@ li a{
     padding: 10px;
     color:#24303a;
     transition: all .3s ease-in;
-
 }
 li a:hover{
     color: darkslategray;
     transform: scale(1.1);
-    
 }
 
 .icon, .icona {
@@ -49,27 +53,35 @@ li a:hover{
 
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1250px) {
+    .header{
+        width: 100%;
+    }
     .listitems li{
-        display: none;   
-        transition: all .3s ease-in;
+        display: none;
+        
     }
 
     li{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding: 3px;
     } 
+
     .logo{
         display: block;
+        text-align: center;
+        margin: 0;
     }
     
 
     .mobileview{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;   
+        border-bottom: rgb(45, 53, 53) 3px solid;
+        
     }
     .icon, .icona{
         display: block; 
@@ -77,10 +89,3 @@ li a:hover{
     }
 }
 
-@media screen and (max-width: 100px){
-    .logo{
-        display: flex;
-        margin-top: 20px;
-        margin-bottom: -30px;
-    }
-}
